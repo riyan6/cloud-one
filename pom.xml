@@ -1,0 +1,46 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>com.funcode</groupId>
+        <artifactId>funcode</artifactId>
+        <version>1.0.0</version>
+        <relativePath/>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.example.cloud</groupId>
+    <artifactId>cloud-one</artifactId>
+    <version>1.0</version>
+    <packaging>pom</packaging>
+
+    <name>cloud-one</name>
+    <url>http://maven.apache.org</url>
+    <modules>
+        <module>cloud-search</module>
+        <module>cloud-user</module>
+        <module>cloud-search-sdk</module>
+        <module>cloud-search-model</module>
+        <module>cloud-user-model</module>
+        <module>cloud-user-sdk</module>
+        <module>cloud-other</module>
+    </modules>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <java.version>17</java.version>
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>17</source>
+                    <target>17</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

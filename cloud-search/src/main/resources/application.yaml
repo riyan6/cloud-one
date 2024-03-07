@@ -1,0 +1,13 @@
+server:
+  port: 8010
+spring:
+  application:
+    name: cloud-search
+dubbo:
+  application:
+    name: cloud-search
+  protocol:
+    name: dubbo
+    port: -1
+  registry:
+    address: nacos://192.168.6.139:8848
