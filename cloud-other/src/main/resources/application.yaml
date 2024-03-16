@@ -1,5 +1,27 @@
 spring:
   application:
     name: cloud-other
+  main:
+    keep-alive: true
+  threads:
+    virtual:
+      enabled: true
 server:
   port: 8686
+  tomcat:
+    threads:
+      max: 800
+      min-spare: 100
+    accept-count: 1000
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+---
+#spring:
+#  data:
+#    redis:
+#      host: localhost
+#      port: 6379
+#      database: 0
